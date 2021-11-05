@@ -43,28 +43,38 @@ a {
 }
 
 .container {
-    margin: 16px auto;
+    margin: 32px auto;
     background-color: white;
-    border: 1px solid black;
+    /* for testing purposes
+    border: 1px solid black; 
+    */
+    
+    /* default dimensions */
     height: 640px;
     width: 640px;
 
     display: grid;
+    /* defined by JavaScript instead
     grid-template-columns: repeat(16, 40px);
-    grid-template-rows: repeat(16, 40px);
-    
+    grid-template-rows: repeat(16, 40px); 
+    */
+    gap: 0;
 }
 
 .square{ 
     box-sizing: border-box;
-    padding: 0.1px;
+    /* defined by JavaScript instead
     width: 40px;
-    height: 40px;
+    height: 40px; 
+    */
     background-color: black;
 }
 
 .square:hover{ 
     box-sizing: border-box;
-    padding: 0.1px;
+    background-color: blue;
+}
+
+.hovered {
     background-color: blue;
 }
